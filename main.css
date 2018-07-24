@@ -102,18 +102,19 @@ body {
 
 .card_title, .card_text{
    font-family: verdana;
-   font-size: 15px;
    color: white;
 }
 
 .card_title{
    margin-bottom: 0px;
    color:white;
+   font-size: 20px;
 }
 
 .card_text{
    margin-top: 10px;
    color:white;
+   font-size: 15px;
 }
 .card {
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -122,6 +123,7 @@ body {
    margin: 3px;
    padding-left: 20px;
    float: left;
+   background:gray;
 }
 
 .card:hover {
