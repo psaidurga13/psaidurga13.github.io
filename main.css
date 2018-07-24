@@ -121,7 +121,6 @@ body {
    transition: 0.3s;
    width: 300px;
    margin: 3px;
-   padding-left: 20px;
    float: left;
    background:gray;
 }
