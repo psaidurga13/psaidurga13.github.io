@@ -1,0 +1,11 @@
+.custom-nav, .title-blog {
+    font-weight: bold;
+}
+
+.custom-nav > a + a {
+    margin-left: 15px;
+}
+
+.custom-background {
+    background-color: #E5E4E2;
+}
