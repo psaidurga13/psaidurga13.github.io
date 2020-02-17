@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="">
+    <meta name="author"
+          content="">
+
+    <title>Durga Blog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"
+          rel="stylesheet">
+    <link href="../blog.css"
+          rel="stylesheet">
+    <link href="../blog-post.css"
+              rel="stylesheet">
+</head>
+
+<body class="custom-background">
+
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap align-items-center">
+                <div class="col-12 text-center">
+                    <h2 class="blog-header-logo text-dark">
+                        AUTOMATICALLY DISCOVERING AND LEARNING NEW VISUAL CATEGORIES WITH RANKING STATISTICS
+                    </h2>
+                    <p>
+                        <a href="https://arxiv.org/pdf/2002.05714.pdf">
+                            source
+                        </a>
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </header>
+
+        <main role="main"
+              class="container">
+            <div class="row">
+                <div class="col-md-12 blog-main">
+                    <div class="blog-post">
+                        <p>
+                            This is by far the excellent paper in the category of self-supervised learning to classify unlabelled data.
+                        </p>
+                        <p>
+                            My notes while reading this paper:
+                            <ul>
+                                <li>
+                                    Pre-train your network with both labelled and unlabelled data without using labels.
+                                    <ul class="no-style-list">
+                                        <li>
+                                            <p>
+                                                Doing this helps your network learn features without being biased towards labelled data, creating generic representation, learning all the common features in the dataset including the unlabelled data.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    generate pairwise pseudo-labels for unlabelled data
+                                    <ul class="no-style-list">
+                                        <li>
+                                            <p>
+                                                since we have generic representation now, we need to somehow use this representation to cluster the unlabelled data
+                                            </p>
+                                            <p>
+                                                pairs of unlabelled images are compared using their representation vectors (obtained by passing unlabelled image through generic representation obtained earlier ) to check similarity between two images.
+                                                if similar, a pairwise  pseudo-label is defined to represent such similar cases.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    minimize the loss function using both given labels and generated pseudo-labels
+                                </li>
+                            </ul>
+                        </p>
+
+                    </div><!-- /.blog-post -->
+
+                </div><!-- /.blog-main -->
+
+            </div><!-- /.row -->
+
+        </main><!-- /.container -->
+
+        <footer class="blog-footer">
+            <p>
+                <a href="#">Back to top &raquo</a>
+            </p>
+        </footer>
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" />
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        </script>
+</body>
+
+</html>

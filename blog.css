@@ -1,11 +1,12 @@
-.custom-nav, .title-blog {
-    font-weight: bold;
+.custom-nav,
+.title-blog {
+  font-weight: bold;
 }
 
 .custom-nav > a + a {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .custom-background {
-    background-color: #E5E4E2;
+  background-color: #e5e4e2;
 }
